@@ -4,7 +4,7 @@ $maxp = 213;
 $preurl = 'http://www.nb.no/services/image/resolver?url_ver=geneza&urn=URN:NBN:no-nb_digibok_';
 $posturl = '&maxLevel=6&level=4&col=0&row=0&resX=2504&resY=3792&tileWidth=1024&tileHeight=1024';
 
-echo "Saved page :      ";  // 5 characters of padding at the end
+echo "Saved page :      ";  // 4 characters of padding at the end
 for ($p = 1; $p <= $maxp; $p++) {
   $paddedp = sprintf("%'.04d", $p);
   $url = $preurl.$bookid.'_'.$paddedp.$posturl;
